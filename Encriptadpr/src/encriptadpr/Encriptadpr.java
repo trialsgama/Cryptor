@@ -5,7 +5,8 @@
  */
 package encriptadpr;
 
-import org.hyperic.sigar.*;
+
+import org.hyperic.sigar.OperatingSystem;
 import java.security.*;
 import java.io.*;
 
@@ -23,7 +24,11 @@ public class Encriptadpr {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+       OperatingSystem OS = OperatingSystem.getInstance();
+       
+       OS.getArch();/*getInstance*/
+       System.out.println(OS.getArch());
+       
         
     }
     
